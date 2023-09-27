@@ -156,8 +156,7 @@ class Mang{
 		}
 }
 }
-
-	
+//Them 1 cai gi do 
 	
 
 
