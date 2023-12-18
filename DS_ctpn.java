@@ -39,7 +39,7 @@ public class DS_ctpn {
     public void xuat(String id){
         System.out.format("%-8s %-8s %-20s %-8s %-8s %-8s\n","MaPN","MaSP","TenSP","SoLuong","DonGia","ThanhTien");
         for(int i=0;i<n;i++){
-            if (ctpn[i].getMaPN()==id) {
+            if (ctpn[i].getMaPN().equals(id)) {
                 ctpn[i].xuat();
             }
         }
@@ -72,7 +72,7 @@ public class DS_ctpn {
                     int MaSP = dis.readInt();
                     String TenSP = dis.readUTF();
                     int SoLuong = dis.readInt();
-                    int DonGia = dis.readInt();
+                    double DonGia = dis.readDouble();
                     ctpn[i]=new O_ChiTietPhieuNhap(MaPN,MaSP,TenSP,SoLuong,DonGia);
                     i++;
                 }

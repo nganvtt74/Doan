@@ -44,8 +44,8 @@ public class App {
                     //Done
                     break;
                 case 6:
-                    // QL_PhieuNhap pn = new QL_PhieuNhap();
-                    // pn.menu();
+                    QL_Phienhap pn = new QL_Phienhap();
+                    pn.menu();
                     //Waitting
                 case 7:
                     System.out.println("Chương trình kết thúc. Tạm biệt!");

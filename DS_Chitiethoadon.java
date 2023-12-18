@@ -7,6 +7,8 @@ public class DS_Chitiethoadon {
   private double tongtien;
   private String MaHD;
   private ChiTietHoaDon[] cthd;
+  private DS_Sanpham dssp = new DS_Sanpham(0);
+
   Scanner scanner = new Scanner(System.in);
 
   public DS_Chitiethoadon() {
@@ -45,8 +47,10 @@ public class DS_Chitiethoadon {
   public void nhap(String ma) {
     String cancel;
     this.MaHD = ma;
+    dssp.DocFileJava("../src/Sanpham.txt");
     System.out.println("Hoa don so:" + MaHD);
     while (true) {
+        dssp.xuat();
       System.out.println("Them san pham");
       them();
       System.out.print("Tiep tuc them san pham [y/n]: ");

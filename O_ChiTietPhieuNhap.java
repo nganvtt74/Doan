@@ -1,6 +1,4 @@
-import java.io.DataOutputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.zip.DataFormatException;
@@ -9,15 +7,15 @@ public class O_ChiTietPhieuNhap {
     private int MaSP;
     private String TenSP;
     private int SoLuong;
-    private int DonGia;
+    private double DonGia;
+    private DS_Sanpham dssp = new DS_Sanpham(0);
     Scanner scanner = new Scanner(System.in);
 
-    private DS_Sanpham dssp = new DS_Sanpham(0);
 
     public O_ChiTietPhieuNhap(){
 
     }
-    public O_ChiTietPhieuNhap(String MaPN,int MaSP,String TenSP,int SoLuong,int DonGia){
+    public O_ChiTietPhieuNhap(String MaPN,int MaSP,String TenSP,int SoLuong,double DonGia){
         this.MaPN=MaPN;
         this.MaSP=MaSP;
         this.TenSP=TenSP;
@@ -36,7 +34,7 @@ public class O_ChiTietPhieuNhap {
     public void SoLuong(int SoLuong){
         this.SoLuong=SoLuong;
     }
-    public void DonGia(int DonGia){
+    public void DonGia(double DonGia){
         this.DonGia=DonGia;
     }
     public String getMaPN(){
@@ -51,11 +49,12 @@ public class O_ChiTietPhieuNhap {
     public int getSoLuong(){
         return SoLuong;
     }
-    public int getDonGia(){
+    public double getDonGia(){
         return DonGia;
     }
     public void nhap(String id){
-        dssp.DocFileJava("..\\src\\Sanpham.txt");
+        dssp.DocFileJava("../src/Sanpham.txt");
+        dssp.xuat();
         MaPN=id;
         System.out.println("Nhập chi tiết phiếu có mã: "+MaPN);
         System.out.print("Nhập mã sản phẩm: ");
@@ -63,13 +62,14 @@ public class O_ChiTietPhieuNhap {
         System.out.print("Nhập số lượng: ");
         SoLuong=scanner.nextInt();
         scanner.nextLine();
-        DonGia=dssp.Truyengiasanpham(MaSP);
+        DonGia=(dssp.Truyengiasanpham(MaSP)*0.5);
         TenSP = dssp.getTenSP(MaSP);
     }
     public void xuat(){
-        int ThanhTien;
+        double ThanhTien;
+        dssp.DocFileJava("../src/Sanpham.txt");
         ThanhTien=DonGia*SoLuong;
-        System.out.format("%-8d %-8d %-20s %-8d %-8d %-8d\n",MaPN,MaSP,TenSP,SoLuong,DonGia,ThanhTien);
+        System.out.format("%-8s %-8d %-20s %-8d %-8.0f %-8.0f\n",MaPN,MaSP,TenSP,SoLuong,DonGia,ThanhTien);
     }
     public void GhiFile(String filename)throws IOException{
         try(DataOutputStream dos = new DataOutputStream(new FileOutputStream(filename,true))){
@@ -77,7 +77,7 @@ public class O_ChiTietPhieuNhap {
             dos.writeInt(MaSP);
             dos.writeUTF(TenSP);
             dos.writeInt(SoLuong);
-            dos.writeInt(DonGia);
+            dos.writeDouble(DonGia);
         }
     }
 }

@@ -55,7 +55,7 @@ public class O_PhieuNhap {
     }
     public void xuat(){
         System.out.println("================================================");
-        System.out.format("MaPN:%-8d MaNV:%-8d MaNCC:%-8d\n",MaPN,MaNV,MaNCC );
+        System.out.format("MaPN:%-8s MaNV:%-8s MaNCC:%-8s\n",MaPN,MaNV,MaNCC );
         System.out.format("Tongtien:%-8d Ngay nhap:%-8s\n",Tongtien,NgayLap);    }
     public void GhiFile(String filename)throws IOException{
         try(DataOutputStream dos = new DataOutputStream(new FileOutputStream(filename,true))){

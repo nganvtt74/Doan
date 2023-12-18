@@ -524,10 +524,17 @@ public class DS_Sanpham {
 		}
 		return null;
 	}
-	public void setSoLuong(int MaSP,int newsl){
+	public void setSoLuonghd(int MaSP,int newsl){
 		for(int i=0;i<n;i++){
 			if (sp[i].getMaSP()==MaSP) {
 				sp[i].setSoLuong(sp[i].getSoluong() - newsl) ;
+			}
+		}
+	}
+	public void setSoLuongpn(int MaSP,int newsl){
+		for(int i=0;i<n;i++){
+			if (sp[i].getMaSP()==MaSP) {
+				sp[i].setSoLuong(sp[i].getSoluong() + newsl) ;
 			}
 		}
 	}

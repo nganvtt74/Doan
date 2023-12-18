@@ -29,15 +29,15 @@ public class Test2 {
 
         //     }
         //     scanner.close();
-        DS_HoaDon dshd=new DS_HoaDon(0);
-        // dshd.nhap();
+        DS_HoaDon dshd=new DS_HoaDon(1);
+        dshd.nhap();
         // dshd.setSoLuong();
         // dshd.ghiFile(); // Ghi Chi tiết hoá đơn vào file
         // dshd.GhiFileJava("../src/Hoadon.txt");//Ghi thông tin hoá đơn vào file
         // dshd.xuat();
-        dshd.docFile(); //Đọc Chi tiết hoá đơn từ file 
-        dshd.DocFileJava("../src/Hoadon.txt"); // Đọc thông tin hoá đơn tư file 
-        dshd.xuat();
+        // dshd.docFile(); //Đọc Chi tiết hoá đơn từ file 
+        // dshd.DocFileJava("../src/Hoadon.txt"); // Đọc thông tin hoá đơn tư file 
+        // dshd.xuat();
         // DanhSachSP dssp=new DanhSachSP(0);
         // dssp.DocFileJava();
         // dssp.xuat();

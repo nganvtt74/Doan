@@ -31,10 +31,10 @@ public class DS_PhieuNhap {
         }
     }
     public void GhiFile(){
-        ctpn.GhiFileJava("..//src//Chitietphieunhap.txt");
+        ctpn.GhiFileJava("../src/Chitietphieunhap.txt");
     }
     public void Docfile(){
-        ctpn.DocFileJava("..//src//Chitietphieunhap.txt");
+        ctpn.DocFileJava("../src/Chitietphieunhap.txt");
     }
     public void GhiFileJava(String filename){
         try{

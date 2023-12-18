@@ -79,7 +79,6 @@ public class ChiTietHoaDon {
     public void nhapchitiethoadon(String id) {
         dssp.DocFileJava("../src/Sanpham.txt");
         maHD = id;
-        dssp.xuat();
         System.out.print("Ma san pham: ");
         maSP = sc.nextInt();
         TenSP = dssp.getTenSP(maSP);
