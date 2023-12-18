@@ -1,0 +1,6 @@
+{
+    "java.project.outputPath": "./out",
+    "java.project.sourcePaths": ["./src"],
+    "java.project.references": [],
+    "java.project.referencedLibraries": []
+}
