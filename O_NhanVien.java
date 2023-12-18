@@ -1,7 +1,8 @@
 import java.io.*;
+import java.lang.Object;
 import java.util.Scanner;
 
-public class O_NhanVien {
+public class O_NhanVien implements Object{
     private String MaNV;
     private String HoDem;
     private String TenNV;

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
-public class DS_Loai {
+public class DS_Loai implements DanhSach {
     private int n , a= 0; 
     private O_O_Loai[] l;
     public DS_Loai(){

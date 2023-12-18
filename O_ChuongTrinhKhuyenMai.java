@@ -3,7 +3,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class O_ChuongTrinhKhuyenMai {
+public class O_ChuongTrinhKhuyenMai implements Object{
     private String MaCT;
     private String TenCT;
     private String NgayBatDau;

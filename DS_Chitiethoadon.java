@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.io.*;
 
-public class DS_Chitiethoadon {
+public class DS_Chitiethoadon implements DanhSach{
   private int n;
   private double tongtien;
   private String MaHD;

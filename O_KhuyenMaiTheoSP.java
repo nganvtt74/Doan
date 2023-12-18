@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.Scanner;
-public class O_KhuyenMaiTheoSP extends O_KhuyenMai {
+public class O_KhuyenMaiTheoSP extends O_KhuyenMai implements Object{
     private int MaSP;
     Scanner input = new Scanner(System.in);
 

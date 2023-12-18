@@ -25,7 +25,7 @@ public class QL_Hoadon {
     
                 switch (choice) {
                     case 1:
-                        dshd.themhoadon();
+                        dshd.them();
                         break;
                     case 2:
                         dshd.xoahoadon();

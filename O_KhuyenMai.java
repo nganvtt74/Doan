@@ -3,7 +3,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class O_KhuyenMai {
+public abstract class O_KhuyenMai implements Object{
     private String MaCT;
     private String MaKM;
     private int MucKM;
@@ -48,7 +48,6 @@ public class O_KhuyenMai {
         MucKM = input.nextInt();
     }
     public void xuat() {
-        System.out.format("%-8s %-8d",MaKM, MucKM);
     }
 
     public void GhiFile(String filename) throws IOException {

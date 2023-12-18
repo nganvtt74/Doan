@@ -307,10 +307,7 @@ public class DS_KM {
                     String MaCT = dis.readUTF();
 					String MaKM = dis.readUTF();
 					int MucKM = dis.readInt();
-					if (type == 1) {
-						ds[i] = new O_KhuyenMai(MaCT, MaKM, MucKM);
-					}
-					else if (type == 2) {
+					if (type == 2) {
 						int MucGia = dis.readInt();
 						ds[i] = new O_KhuyenMaiTheoHoaDon(MaCT, MaKM, MucKM, MucGia);
 					}

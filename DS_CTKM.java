@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DS_CTKM {
+public class DS_CTKM implements DanhSach{
     private O_ChuongTrinhKhuyenMai[] ds;
     private int n;
     private DS_KM km = new DS_KM();

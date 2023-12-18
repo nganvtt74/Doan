@@ -2,7 +2,7 @@ import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
-public class O_NhaCungCap {
+public class O_NhaCungCap implements Object{
     private String MaNCC;
     private String TenNCC;
     private String DiaChi;

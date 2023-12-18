@@ -4,7 +4,7 @@ import javax.print.attribute.standard.DocumentName;
 
 import java.io.*;
 import java.util.Arrays;
-public class DS_cthd {
+public class DS_cthd implements DanhSach{
     private int MaHD;
     private int n ;
     private int a =0;
@@ -162,5 +162,4 @@ public int getMaSp(int dh) {
     // format 
     // Hoa don: MaHD , MaNv,MaKh,Date
     // Chitiethoadon: MaHD , MaSp,TenSp,Soluong,Dongia,Thanhtien
-    //Test
 }

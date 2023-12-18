@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.Scanner;
-public class O_Vo extends O_SanPham{
+public class O_Vo extends O_SanPham implements Object{
     private int SoTrang;
     private String ChatLuongGiay;
     public O_Vo(){

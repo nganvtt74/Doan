@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.Scanner;
-public class O_Chitiethoadon{
+public class O_Chitiethoadon implements Object{
     private int MaHD;
     private int MASP;
     private String TenSP;

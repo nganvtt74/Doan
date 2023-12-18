@@ -4,7 +4,7 @@ import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class DS_HoaDon {
+public class DS_HoaDon implements DanhSach{
   private int n;
   private HoaDon[] hd;
   private DS_Chitiethoadon cthd = new DS_Chitiethoadon(0);
@@ -35,7 +35,7 @@ public class DS_HoaDon {
     }
   }
 
-  public void themhoadon() {
+  public void them() {
     hd = Arrays.copyOf(hd, hd.length + 1);
     hd[n] = new HoaDon();
     hd[n].nhaphoadon();

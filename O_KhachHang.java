@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class KhachHang {
+public class KhachHang implements Object{
     private String maKhachHang;
     private String Hodem;
     private String Ten;

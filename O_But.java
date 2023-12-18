@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOError;
 import java.io.IOException;
 import java.util.Scanner;
-public class O_But extends O_SanPham {
+public class O_But extends O_SanPham implements Object{
 	private String Mau;
 	public O_But(){
 

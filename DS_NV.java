@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DS_NV {
+public class DS_NV implements DanhSach{
     private O_NhanVien[] dsnv;
     private int n;
     Scanner input = new Scanner(System.in);

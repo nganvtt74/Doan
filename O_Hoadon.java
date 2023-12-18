@@ -2,7 +2,7 @@ import java.util.Date;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
-public class O_Hoadon {
+public class O_Hoadon implements Object{
     private int MaHD;
     private int MaNV;
     private int MaKH;

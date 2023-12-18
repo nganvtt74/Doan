@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.Scanner;
-	public class O_Loai{
+	public class O_Loai implements Object{
 		private int MaLoai;
 		private String TenLoai;
 		public O_Loai(){

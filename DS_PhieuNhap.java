@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.io.*;
-public class DS_PhieuNhap {
+public class DS_PhieuNhap implements DanhSach{
     private int n;
     private O_PhieuNhap[] pn;
     private DS_ctpn ctpn = new DS_ctpn(0);

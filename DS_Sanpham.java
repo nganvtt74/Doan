@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.io.*;
 import java.util.Arrays;
-public class DS_Sanpham {
+public class DS_Sanpham implements DanhSach{
 	private int n;
 	private int a = 0;
 	private int max = 1000;

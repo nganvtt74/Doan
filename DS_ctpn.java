@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import javax.swing.text.MaskFormatter;
 
-public class DS_ctpn {
+public class DS_ctpn implements DanhSach{
     private String MaPN;
     private int n;
     private O_ChiTietPhieuNhap[] ctpn;
@@ -23,9 +23,9 @@ public class DS_ctpn {
         ctpn[n].nhap(MaPN);
         n++;
     }
-    public void nhap(String ma){
+    public void nhap(String id){
         String cancel;
-        this.MaPN=ma;
+        this.MaPN=id;
         while (true) {
             System.out.println("Them san pham");
             them();
@@ -36,6 +36,7 @@ public class DS_ctpn {
             }
         }
 }
+
     public void xuat(String id){
         System.out.format("%-8s %-8s %-20s %-8s %-8s %-8s\n","MaPN","MaSP","TenSP","SoLuong","DonGia","ThanhTien");
         for(int i=0;i<n;i++){

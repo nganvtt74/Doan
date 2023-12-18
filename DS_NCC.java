@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DS_NCC {
+public class DS_NCC implements DanhSach{
     private O_NhaCungCap[] dsncc;
     private int n;
     Scanner input = new Scanner(System.in);
